@@ -4,7 +4,7 @@ const cors = require("cors");
 
 //constantes de inicio
 const app = express();
-const port = 9001;
+const port = process.env.port || 3000;
 
 //app use
 app.use(bodyparser.json());
@@ -12,10 +12,16 @@ app.use(cors());
 
 //rotas
 app.get("/", (req, res) => {
-  let message = "Parabéns, você chegou até aqui!";
+  let message = `API OK!`;
 
-  res.status(200).send(message);
+  res.send(message);
 });
+
+app.get("/challenge/v2", (req, res) => {
+  let message = "Parabéns você chegou até aqui!"
+
+  res.send(message)
+})
 
 
 app.listen(port, (err) => {
