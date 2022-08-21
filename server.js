@@ -17,6 +17,12 @@ app.get("/", (req, res) => {
   res.send(message);
 });
 
+app.get("/github", (req, res) => {
+  let url = "https://github.com/victorrocha2910/aws-ci-cd.git";
+
+  res.send(url)
+})
+
 app.get("/challenge/v2", (req, res) => {
   let message = "Parabéns você chegou até aqui!"
 
