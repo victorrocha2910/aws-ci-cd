@@ -12,5 +12,12 @@
 
 <!-- GET RAIZ  -->
  - http://nodetestev2-env.eba-cwmczksc.us-east-1.elasticbeanstalk.com
- <!-- GET - CHALLENGE - VERSION  -->
+<!-- GET - CHALLENGE - VERSION  -->
  - http://nodetestev2-env.eba-cwmczksc.us-east-1.elasticbeanstalk.com/challenge/v2
+<!-- GET GITHUB REPO -->
+ - http://nodetestev2-env.eba-cwmczksc.us-east-1.elasticbeanstalk.com/github
+
+ # OBS
+
+ - aplicação rodando de modo gratuito na aws.
+ - não consegui fazer a conteinerização dentro da aws por falta de conhecimento ainda.
